@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Contact Diary</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card my-3">
+            <div class="card-header">
+              <h2 class="display-4 text-center">Contact Diary</h2>
+            </div>
+            <div class="card-body">
+              <form method="post" id="addContact">
+                <div class="mb-2">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    class="form-control"
+                    value="SAM"
+                  />
+                  <div class="invalid-feedback">First name is required.</div>
+                </div>
+                <div class="mb-2">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    class="form-control"
+                    value="Sajjad"
+                  />
+                  <div class="invalid-feedback">Last name is required.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="number12">Contact Number</label>
+                  <input
+                    type="text"
+                    name="contact2"
+                    id="number12"
+                    class="form-control"
+                  />
+                  <div class="invalid-feedback">
+                    Contact number is required.
+                  </div>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-success" type="submit">Add</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Contact</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="contact-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
